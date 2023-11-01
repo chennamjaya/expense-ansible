@@ -47,7 +47,7 @@
       ansible.builtin.shell: mysql -h mysql.vaishnavidevops.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
 
     - name: Start Backend Service
-      ansible.bulitin.systemd:
+      ansible.builtin.systemd:
         name: backend
         state: restarted
         enabled: yes
