@@ -1,4 +1,7 @@
-- name: Verigy NodeJs
+- name: Set Hostname
+  ansible.builtin.shell: set-hostname backend
+
+- name: Verify NodeJs
   ansible.builtin.shell: type npm
   register: npm
   ignore_errors: yes
