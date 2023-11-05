@@ -26,7 +26,7 @@
  - name: Include App Prerequisites 
    ansible.builtin.import_role:
      name: common
-     tasks_from: app_prereq
+     tasks_from: app_prerequisites
      
 - name: Install NodeJs Dependencies
   ansible.builtin.shell: npm install
